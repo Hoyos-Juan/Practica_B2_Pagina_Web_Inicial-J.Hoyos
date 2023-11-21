@@ -1,0 +1,197 @@
+html {
+    font-family:'Roboto', sans-serif;
+    background-color: grey;
+}
+/* He puesto el atributo de font-family para utilizar una fuente de carácteres más moderna. Además he puesto el color de fondo para toda la página. */
+header {
+    background-color: grey;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+}
+/* El estilo del header hace que tenga un recuadro gris y lo centra para la visualización de la página. */
+.logo-1 {
+    max-width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+/* Después en el css lo seleccionamos con .logo-1. Además, he cambiado el logo por uno que se adecua al página web y este estilo lo coloca en una esquina de la página. */
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+/* He añadido este estilo para resetear el estilo del nav y ul. */
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+/* Aqui hace que la lista sea en horizontal con un margen de 10px. */
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #555;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+/* Con este estilo dentro del nav a, hace que la lista fuera por botones. */
+nav a:hover{
+    background-color: red;
+    color: #fff;
+}
+/* Por último, este estilo hace que al pasar el ratón dentro de la caja el color de fondo y texto sean diferente. */
+main{
+    padding: 10px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(39, 36, 36, 0.1);
+    text-align: center;
+}
+/* Aqui hacemos que el estilo de la etiqueta <main> tenga un color de fondo negro, los bordes sean redondeados y los textos sean centrado. */
+h2 {
+    color: whitesmoke;
+    text-align: center;
+}
+/* Con este estilo de css ponemos el color de fuente y alineamos los h2 en formato centrado. */
+p{
+    color: whitesmoke;
+    text-align: justify;
+}
+/* Asi mismo lo hacemos con el <p> de esta página, pero el texto esta en formato justificado. */
+#Imagen-2{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+/* Luego seleccionamos el atributo id con el #Imagen-2 y añadimos los estilos para poner la imagen en el centro de la página. */
+aside {
+    background-color: grey;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 8px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+/* Este estilo modifica la estructura de aside para colocarlo en la esquina superior derecha, además de ponerle el mismo color de fondo que el header. */
+.pequeño{
+    color: whitesmoke;
+    font-size: x-small;
+    text-align: center;
+}
+/* Lo importante de este estilo es el tamaño, que es muy pequeño, después le ponemos color y lo centramos. */
+aside a{
+    display: block;
+    margin-top: 8px;
+}
+/* Con esto alineamos el margen con el del header y hacemos que el enlace no se mueva. */
+aside a img{
+    max-width: fit-content;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+/* Aqui ajustamos la imagen para que no se coma parte de la página y este dentro del recuado del header, además le ponemos un borde redondeado y le añadimos un
+transition que junto al transform del :hover dará el efecto de zoom al pasar el ratón por la imagen. */
+aside a img:hover{
+    transform: scale(1.1);
+}
+/* Aqui ponemos el transform scale para crear el efecto anteriormente mencionado. */
+footer{
+    background-color: #555;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+/* Aquí ponemos el estilo del color de fondo, el color de texto, centramos el texto y le ponemos el borde redondeado al footer. */
+#F-Texto{
+    text-align: center;
+    font-style: oblique;
+    font-size: large;
+    color: whitesmoke;
+}
+/* Con este estilo de css para el id #F-Texto ponemos el texto centrado, su colo, su estilo y su tamaño. */
+footer address::before{
+    content: "\2022";
+    margin-right: 8px;
+}
+/* Ahora aplicamos un pseudo-atributo ::before para poner que la lista de address tenga un punto. */
+.Dir-1::before{
+    color: darkred;
+}
+/* Por último, ponemos color al punto que hemos creado. */
+main ol{
+    list-style-type: decimal;
+    list-style-position: inside;
+    color: whitesmoke;
+    text-align: center;
+}
+/* Con este css se aplica cambios a todos los <lh> dentro de <main>, que justamente son en "audio.html" y "video.html". */
+main lh{
+    font-size: large;
+    font-weight: bold;
+    color: whitesmoke;
+    font-style: oblique;
+}
+/* Aquí hacemos el css con los <lh> en <main>, que tambien estan en "audio.html" y "video.html". */
+main .lista-audio{
+    margin-top: 10px;
+    font-style: oblique;
+}
+/* Este css se aplica a la etiqueta que tenga de atributo class y nombre de "lista-audio". 
+Esa clase la tiene la etiqueta <audio> en "audio.html". */
+main audio{
+    margin-top: 20px;
+}
+/* Aqui le añado un margen al audio. */
+main audio[controls] {
+    background-color: white;
+}
+/* Despues pongo el color del mismo que da por defecto, asi no crea un contraste. */
+#DIV-1 {
+    background-color: #333;
+}
+/* Ahora salto a "videos.html" para crear el css del <div> con atributo id y nombre "DIV-1". Lo que es poner un color de fondo
+diferente al sector de <main> que hemos hecho antes. */
+main video{
+    margin-top: 10px;
+}
+/* Este css se asigna a las etiquetas <video> en <main>, que esa seleccion la tenemos en "videos.html". */
+main video[controls] {
+    background-color: rgb(68, 0, 0);
+}
+/* Después he aplicado un css en el atributo controls de las etiquetas <video>, así ponemos un color a la sección mencionada. */
+main table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+/* Para empezar la hoja de css en la página de taules.html, hacemo el estilo de la tabla. */
+main th, main td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+/* Luego seleccionamos tanto los <th> como los <td> para efectuar el cambio de los bordes y la alineación del texto. */
+main th {
+    background-color: #333;
+    color: whitesmoke;
+}
+/* Después creamos un estilo único de los <th> para darles un color de fondo y color de texto especificos. */
+main tr:nth-child(even) {
+    background-color: #555;
+}
+/* Aquí he utlizado un nth-child(even), esto hace que el estilo css se efectue en las filas pares de la tabla. */
+main tr:nth-child(odd) {
+    background-color: #555;
+}
+/* Luego he puesto un nth-child(odd) para efectuar los cambios del css en las filas impares de la tabla. */
+main tr:hover {
+    background-color: darkred;
+}
+/* Por último he añadido un :hover para cuando pasemos el ratón por las filas de las columnas, el color de fondo sea diferente. */
